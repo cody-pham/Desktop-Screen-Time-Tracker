@@ -1,0 +1,38 @@
+Overall Goal:
+
+    record current application being used on computer and tracck the amount of time
+    save data into a csv file and use Meta Prophet to predict future time usage
+    have chatGPT write a message based on results
+
+Breakdown:
+
+    Record Current Application (DONE)
+
+        determine what application is in focus
+        start timer when i focus
+        end timer when out of focus
+        store event with attributes
+
+            app name
+            time spent 
+            
+
+    Save data
+
+        create a file with the current date (DONE)
+        find all events that are from the same app/website and add up the time (DONE)
+        store the data in csv with columns: date, app 1, app2, ... ,  website 1, website 2, ...
+    
+    Predict Data
+
+        feed saved data into Prophet and predict for current day
+        send message to chatGPT
+
+            get message saying few facts about current date (day of the week, holidays, global events happening)
+
+        get message and print it to console
+
+
+    
+    
+        
