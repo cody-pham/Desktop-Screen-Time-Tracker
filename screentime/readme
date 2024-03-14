@@ -6,7 +6,7 @@ Overall Goal:
 
 Breakdown:
 
-    Record Current Application (DONE)
+    Record Current Application 
 
         determine what application is in focus
         start timer when i focus
@@ -17,11 +17,11 @@ Breakdown:
             time spent 
             
 
-    Save data
+    Save data 
 
-        create a file with the current date (DONE)
-        find all events that are from the same app/website and add up the time (DONE)
-        store the data in csv with columns: date, app 1, app2, ... ,  website 1, website 2, ...
+        create a file with the current date
+        find all events that are from the same app and add up the time 
+        store the data in json files
     
     Predict Data
 

@@ -18,20 +18,18 @@ with open (filename, 'a', encoding='utf-8') as f:
             start = time.time()
 
 f.close()
-result = {'Discord': 0, 'VALORANT  ': 0, 'Visual Studio Code': 0, 'Google Chrome': 0, 'Other': 0}
-with open(filename) as f:
+result = {'Discord': 0, 'VALORANT  ': 0, 'Visual Studio Code': 0, 'Google Chrome': 0, 'Other': 0, 'League of Legends': 0}
+with open(filename, encoding="utf8") as f:
     Lines = f.readlines()
     
     for line in Lines:
         start = 0
         for x in range(len(line)):
-            try:
-                if (line[x] == '-'):
-                    start = x + 2
-                elif (line[x] == ','):
-                    end = x
-            except:
-                pass
+            if (line[x] == '-'):
+                start = x + 2
+            elif (line[x] == ','):
+                end = x
+
         app = line[start:end]  
         tim = int(line[end + 1:])  
         
@@ -53,6 +51,6 @@ for appname in result:
     with open('./screentime/data/' + appname + '.json', 'w') as f1:
         f1.write(jsonObject)
     f1.close()
-os.remove(filename)
+
 
     
